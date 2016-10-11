@@ -1,6 +1,7 @@
 FROM debian:jessie
 MAINTAINER MOHSEN@IPROPERTY
 ENV DEBIAN_FRONTEND noninteractive
+RUN mkdir -p /usr/src/app
 
 RUN apt-get update -y \
     && apt-get install -y curl python-pip python-dev libopencv-dev python-opencv \
