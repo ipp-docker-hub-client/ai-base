@@ -6,7 +6,7 @@ RUN apt-get update -y \
     && apt-get install -y curl python-pip python-dev libopencv-dev python-opencv \
     && rm -rf /var/lib/apt/lists/*
 
-RUN pip install -r requirements.txt
+RUN pip install Flask
 
 #install Tensorflow
 ENV TENSORFLOW_VERSION 0.11.0rc0
