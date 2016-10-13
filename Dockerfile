@@ -13,10 +13,6 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
         && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
-
-RUN pip install \
-        numpy \
-        scipy
         
 # Install TensorFlow CPU version from central repo
 ENV TENSORFLOW_VERSION 0.11.0rc0
