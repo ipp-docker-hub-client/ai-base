@@ -17,9 +17,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN pip install \
         matplotlib \
         numpy \
-        scipy \
-        aiohttp \
-        nose
+        scipy
         
 # Install TensorFlow CPU version from central repo
 ENV TENSORFLOW_VERSION 0.11.0rc0
