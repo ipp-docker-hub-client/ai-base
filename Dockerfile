@@ -14,7 +14,7 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN pip --no-cache-dir install \
+RUN pip install \
         matplotlib \
         numpy \
         scipy \
