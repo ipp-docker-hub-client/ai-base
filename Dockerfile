@@ -1,4 +1,4 @@
-FROM debian:jessie
+FROM ipropertygroup/atensflow
 MAINTAINER MOHSEN@IPROPERTY
 ENV DEBIAN_FRONTEND noninteractive
 
