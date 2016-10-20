@@ -18,7 +18,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 # Install TensorFlow CPU version from central repo
 ENV TENSORFLOW_VERSION 0.11.0rc0
 RUN pip install \
-    http://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-${TENSORFLOW_VERSION}-cp27-none-linux_x86_64.whl
+    http://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-${TENSORFLOW_VERSION}-cp27-none-linux_x86_64.whl \
+    flask
 
 ENTRYPOINT ["python"]
 CMD ["/usr/src/app/main.py"]
