@@ -1,5 +1,6 @@
-FROM ipropertygroup/atensflow
+FROM ipropertygroup/python-base:python27
 MAINTAINER MOHSEN@IPROPERTY
+
 ENV DEBIAN_FRONTEND noninteractive
 
 # Pick up some TF dependencies
@@ -20,4 +21,4 @@ RUN pip install \
     http://storage.googleapis.com/tensorflow/linux/cpu/tensorflow-${TENSORFLOW_VERSION}-cp27-none-linux_x86_64.whl
 
 ENTRYPOINT ["python"]
-CMD ["main.py"]
+CMD ["/usr/src/app/main.py"]
